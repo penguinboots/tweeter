@@ -2,8 +2,13 @@
   color: #ffffff;
   background: #4055a1;
   height: 120px;
+  width: 100%;
   padding-left: 1.5em;
   padding-right: 1.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
 
   display: flex;
   justify-content: space-between;
@@ -15,5 +20,7 @@
 }
 
 .nav-write {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
