@@ -2,6 +2,9 @@ header {
   height: 400px;
   width: 100%;
   margin-top: 120px;
+  background-image: url(../images/header-background.png);
+  background-color: #4055a1;
+  color: #FFFFFF;
 
   display: flex;
   flex-direction: column;
