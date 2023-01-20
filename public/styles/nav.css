@@ -1,7 +1,19 @@
-nav {
+.nav-bar {
   color: #ffffff;
   background: #4055a1;
   height: 120px;
   padding-left: 1.5em;
   padding-right: 1.5em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: Bungee, sans-serif;
+}
+
+.nav-write {
+  justify-content: center;
 }
