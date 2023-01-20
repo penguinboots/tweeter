@@ -16,11 +16,15 @@
   font-weight: bold;
 }
 
-.new-tweet .form button {
+.new-tweet button {
   background-color: #4055a1;
   color: #FFFFFF;
   font-family: Bungee, sans-serif;
   font-size: 16px;
   padding-left: 8px;
   padding-right: 8px;
+}
+
+.new-tweet .counter {
+  font-family: Bungee, sans-serif;
 }
