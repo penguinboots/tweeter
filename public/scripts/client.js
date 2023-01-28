@@ -61,7 +61,17 @@ $(document).ready(() => {
   // submit event listener
   $(".new-tweet form").submit(function(event) {
     event.preventDefault();
+
     const serializedData = $(this).serialize();
+
+    if ($(this).find("textarea").val().length > 140) {
+      alert("Your message is too long.");
+    }
+
+    if (!$(this).find("textarea").val()) {
+      alert("Please enter a message!");
+    }
+
     $.post("/tweets", serializedData)
       .then(loadTweets);
   });
