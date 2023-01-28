@@ -41,6 +41,7 @@ $(document).ready(() => {
     }
   };
 
+  // get request to /tweets, render tweets on success
   const loadTweets = function() {
     $.ajax({
       url: '/tweets',
@@ -61,7 +62,7 @@ $(document).ready(() => {
     event.preventDefault();
     const serializedData = $(this).serialize();
     $.post("/tweets", serializedData)
-      .then(renderTweets(data));
+      .then(loadTweets);
   });
 
 });
