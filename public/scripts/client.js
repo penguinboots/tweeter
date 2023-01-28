@@ -56,9 +56,15 @@ $(document).ready(() => {
     });
   };
 
+  const resetCounter = function() {
+    $('#chars').text(140);
+  };
+
+
   loadTweets();
 
-  // submit event listener
+  // submit-event listener -- accept input if <140 char, reload with new tweet
+  // empty text box, reset char counter
   $(".new-tweet form").submit(function(event) {
     event.preventDefault();
 
@@ -75,6 +81,7 @@ $(document).ready(() => {
           loadTweets();
           console.log($(this).find("texetarea").val());
           tweetText.val('');
+          resetCounter();
         });
     }
 
