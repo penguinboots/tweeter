@@ -1,0 +1,22 @@
+article.tweet {
+    background-color: #f4f1ec;
+    border-style: solid;
+    border-color: grey;
+    border-width: 4px;
+}
+
+article.tweet:hover {
+  box-shadow: 5px 5px #c9cbdf;
+}
+
+article.tweet header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+article.tweet footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
