@@ -11,10 +11,9 @@
       type="text/css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -65,11 +64,22 @@
       <script src="./scripts/composer-char-counter.js"></script>
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form class="form" action="/tweets" method="POST" enctype="application/x-www-form-urlencoded; charset=UTF-8">
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+        <form
+          class="form"
+          action="/tweets"
+          method="POST"
+          enctype="application/x-www-form-urlencoded; charset=UTF-8"
+        >
+          <textarea
+            name="text"
+            id="tweet-text"
+            placeholder="What are you humming about?"
+          ></textarea>
           <div class="submit-counter">
             <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text" id="chars">140</output>
+            <output name="counter" class="counter" for="tweet-text" id="chars"
+              >140</output
+            >
           </div>
         </form>
       </section>
@@ -77,22 +87,20 @@
         <article class="tweet">
           <header>
             <div class="user-info">
-            <div><img src="https://i.imgur.com/73hZDYK.png" alt="user-pic"></div>
-            <div>Username placeholder</div>
+              <div>
+                <img src="https://i.imgur.com/73hZDYK.png" alt="user-pic" />
+              </div>
+              <div>Username placeholder</div>
             </div>
-            <div class="user-handle">
-              @Username
-            </div>
+            <div class="user-handle">@Username</div>
           </header>
           <div class="tweet-body">Placeholder tweet text.</div>
           <footer>
+            <div><output name="days-ago">10</output> days ago</div>
             <div>
-              <output name="days-ago">10</output> days ago
-            </div>
-            <div>
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-heart"></i>
             </div>
           </footer>
         </article>
