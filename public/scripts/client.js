@@ -16,6 +16,7 @@ const tweetData = {
   "created_at": 1461116232227
 };
 
+// create tweet article element given raw tweet data
 const createTweetElement = function (tweetData) {
   const tweetArticle = $(`
   <article class="tweet">
@@ -42,6 +43,7 @@ const createTweetElement = function (tweetData) {
   return tweetArticle;
 };
 
+// given array of tweets, append generated article element to tweets-container
 const renderTweets = function (tweets) {
   const $container = $('#tweets-container');
   $container.empty();
