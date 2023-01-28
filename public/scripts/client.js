@@ -42,8 +42,15 @@ $(document).ready(() => {
   };
 
   const loadTweets = function() {
-    $.get("/tweets", function(data, status) {
-      renderTweets(data);
+    $.ajax({
+      url: '/tweets',
+      method: 'GET',
+      success: (tweets) => {
+        renderTweets(tweets);
+      },
+      error: (error) => {
+        console.error(error);
+      }
     });
   };
 
@@ -52,9 +59,7 @@ $(document).ready(() => {
   // submit event listener
   $(".new-tweet form").submit(function(event) {
     event.preventDefault();
-    console.log($(this).find("textarea").val());
     const serializedData = $(this).serialize();
-    console.log(serializedData);
     $.post("/tweets", serializedData)
       .then(renderTweets(data));
   });
