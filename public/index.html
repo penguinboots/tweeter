@@ -69,7 +69,8 @@
     <main class="container">
       <script src="./scripts/composer-char-counter.js"></script>
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+        <!-- <h2>Compose Tweet</h2> -->
+        <span class="error-message" id="tweet-error" hidden="true"></span>
         <form
           class="form"
           action="/tweets"
@@ -84,7 +85,6 @@
           <div class="submit-counter">
             <div>
               <button type="submit">Tweet</button>
-              <span class="error-message" id="tweet-error"></span>
             </div>
             <output name="counter" class="counter" for="tweet-text" id="chars"
               >140</output

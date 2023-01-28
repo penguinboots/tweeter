@@ -69,7 +69,8 @@ $(document).ready(() => {
   };
 
   const displayError = function(message) {
-    $('#tweet-error').text(message);
+    $('#tweet-error').text(message).slideDown(600).delay(1500).slideUp(600);
+
   };
 
   const clearError = () => {
