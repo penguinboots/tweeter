@@ -16,7 +16,7 @@ const tweetData = {
   "created_at": 1461116232227
 };
 
-const createTweetElement = (tweetData) => {
+const createTweetElement = function (tweetData) {
   const tweetArticle = $(`
   <article class="tweet">
     <header>
@@ -30,7 +30,7 @@ const createTweetElement = (tweetData) => {
     </header>
     <div class="tweet-body">${tweetData.content.text}</div>
     <footer>
-      <div><output name="days-ago">PLACEHOLDER</output> days ago</div>
+      <div><output name="days-ago">${tweetData.create_at}</output> ago</div>
       <div>
         <i class="fa-solid fa-flag"></i>
         <i class="fa-solid fa-retweet"></i>
@@ -42,7 +42,11 @@ const createTweetElement = (tweetData) => {
   return tweetArticle;
 };
 
-
-const $tweet = createTweetElement(tweetData);
-console.log($tweet);
-$('#tweets-container').append($tweet);
+const renderTweets = function (tweets) {
+  const $container = $('#tweets-container');
+  $container.empty();
+  for (const tweet in tweets) {
+    const oneTweet = createTweetElement(tweet);
+    $container.append(oneTweet);
+  }
+};
