@@ -64,15 +64,18 @@ $(document).ready(() => {
     });
   };
 
+  // restore character counter to 140
   const resetCounter = function() {
     $('#chars').text(140);
   };
 
+  // slides down error with given message
   const displayError = function(message) {
     $('#tweet-error').text(message).slideDown(600).delay(1500).slideUp(600);
 
   };
 
+  // clear error message (only applies if new submission before error slides up)
   const clearError = () => {
     $('#tweet-error').text('');
   };
@@ -94,7 +97,6 @@ $(document).ready(() => {
     } else {
       $.post("/tweets", serializedData)
         .then(() => {
-          console.log($(this).find("texetarea").val());
           tweetText.val('');
           resetCounter();
           clearError();
