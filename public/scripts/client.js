@@ -63,16 +63,21 @@ $(document).ready(() => {
     event.preventDefault();
 
     const serializedData = $(this).serialize();
-    const tweetText = $(this).find("textarea").val();
+    const tweetText = $(this).find("textarea");
 
-    if (!tweetText) {
+    if (!tweetText.val()) {
       alert("Please enter a message!");
-    } else if (tweetText.length > 140) {
+    } else if (tweetText.val().length > 140) {
       alert("Your message is too long.");
     } else {
       $.post("/tweets", serializedData)
-        .then(loadTweets);
+        .then(() => {
+          loadTweets();
+          console.log($(this).find("texetarea").val());
+          tweetText.val('');
+        });
     }
+
   });
 
 });
