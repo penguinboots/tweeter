@@ -82,7 +82,10 @@
             placeholder="What are you humming about?"
           ></textarea>
           <div class="submit-counter">
-            <button type="submit">Tweet</button>
+            <div>
+              <button type="submit">Tweet</button>
+              <span class="error-message" id="tweet-error"></span>
+            </div>
             <output name="counter" class="counter" for="tweet-text" id="chars"
               >140</output
             >

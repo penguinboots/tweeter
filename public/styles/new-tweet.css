@@ -3,7 +3,7 @@
   align-self: center;
 }
 
-.new-tweet .form .submit-counter{
+.new-tweet .form .submit-counter {
   display: flex;
   justify-content: space-between;
 }
@@ -23,7 +23,7 @@
 
 .new-tweet button {
   background-color: #4055a1;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: Bungee, sans-serif;
   font-size: 16px;
   padding-left: 8px;
@@ -32,4 +32,10 @@
 
 .new-tweet .counter {
   font-family: Bungee, sans-serif;
+}
+
+.new-tweet .error-message {
+  color: #af0a0a;
+  font-family: bungee;
+  font-size: 16px;
 }
