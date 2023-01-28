@@ -6,6 +6,7 @@
 $(document).ready(() => {
   // create tweet article element given raw tweet data
   const createTweetElement = function(tweet) {
+    const timeAgo = timeago.format(tweet.created_at);
     const tweetArticle = $(`
   <article class="tweet">
     <header>
@@ -19,7 +20,7 @@ $(document).ready(() => {
     </header>
     <div class="tweet-body">${tweet.content.text}</div>
     <footer>
-      <div><output name="days-ago">${tweet.created_at}</output> ago</div>
+      <div><output name="time-ago">${timeAgo}</output></div>
       <div>
         <i class="fa-solid fa-flag"></i>
         <i class="fa-solid fa-retweet"></i>
