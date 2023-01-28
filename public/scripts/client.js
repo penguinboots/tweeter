@@ -63,17 +63,16 @@ $(document).ready(() => {
     event.preventDefault();
 
     const serializedData = $(this).serialize();
+    const tweetText = $(this).find("textarea").val();
 
-    if ($(this).find("textarea").val().length > 140) {
-      alert("Your message is too long.");
-    }
-
-    if (!$(this).find("textarea").val()) {
+    if (!tweetText) {
       alert("Please enter a message!");
+    } else if (tweetText.length > 140) {
+      alert("Your message is too long.");
+    } else {
+      $.post("/tweets", serializedData)
+        .then(loadTweets);
     }
-
-    $.post("/tweets", serializedData)
-      .then(loadTweets);
   });
 
 });
