@@ -3,6 +3,14 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+
+// escape function
+const escape = function(str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 $(document).ready(() => {
   // create tweet article element given raw tweet data
   const createTweetElement = function(tweet) {
@@ -18,7 +26,7 @@ $(document).ready(() => {
       </div>
       <div class="user-handle">${tweet.user.handle}</div>
     </header>
-    <div class="tweet-body">${tweet.content.text}</div>
+    <div class="tweet-body">${escape(tweet.content.text)}</div>
     <footer>
       <div><output name="time-ago">${timeAgo}</output></div>
       <div>
@@ -67,7 +75,6 @@ $(document).ready(() => {
   // empty text box, reset char counter
   $(".new-tweet form").submit(function(event) {
     event.preventDefault();
-
     const serializedData = $(this).serialize();
     const tweetText = $(this).find("textarea");
 
