@@ -1,6 +1,8 @@
 .new-tweet {
   width: 98%;
   align-self: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .new-tweet .form .submit-counter {
