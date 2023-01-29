@@ -35,7 +35,22 @@ main {
   align-self: center;
   background-color: #f4f1ec;
 }
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+#to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  display: none;
+}
+
+#to-top.active {
+  display: block;
+}

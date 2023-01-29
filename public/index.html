@@ -51,7 +51,7 @@
       </div>
       <div class="nav-write">
         <div><strong>Write</strong> a new tweet</div>
-        <div><i class="fa-solid fa-angles-down"></i></div>
+        <button id="form-toggle" type="button" class="fa-solid fa-angles-down"></button>
       </div>
     </nav>
 
@@ -68,11 +68,12 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <script src="./scripts/composer-char-counter.js"></script>
-      <section class="new-tweet">
+      <section class="new-tweet" hidden="true">
         <!-- <h2>Compose Tweet</h2> -->
         <span class="error-message" id="tweet-error" hidden="true"></span>
         <form
           class="form"
+          id="tweet-form"
           action="/tweets"
           method="POST"
           enctype="application/x-www-form-urlencoded; charset=UTF-8"
@@ -93,6 +94,7 @@
         </form>
       </section>
       <section class="tweets-container"></section>
+      <button id="to-top">Top</button>
     </main>
   </body>
 </html>

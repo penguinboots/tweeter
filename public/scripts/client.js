@@ -80,7 +80,6 @@ $(document).ready(() => {
     $('#tweet-error').text('');
   };
 
-
   loadTweets();
 
   // submit-event listener -- accept input if <140 char, reload with new tweet
@@ -103,7 +102,35 @@ $(document).ready(() => {
           loadTweets();
         });
     }
+  });
 
+  // click handler for header in button, toggles display of tweet form
+  // flips upside down when tweet form is shown
+  $("#form-toggle").click(() => {
+    if ($(".new-tweet").is(':hidden')) {
+      document.getElementById("form-toggle").className = 'fa-solid fa-angles-up';
+    } else {
+      document.getElementById("form-toggle").className = 'fa-solid fa-angles-down';
+    }
+    $(".new-tweet").slideToggle("slow");
+    $(".new-tweet").find("textarea").focus();
+  });
+
+  $("#to-top").click(function(event) {
+    event.preventDefault();
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+
+  $(window).scroll(() => {
+    console.log($(window).scrollTop());
+    // if ($(window).scrollTop() > 100) {
+    //   $("#to-top").slideToggle("slow");
+    // } else {
+    //   $("#to-top").slideToggle("slow");
+    // }
+
+    $('#to-top').toggleClass("active", $(window).scrollTop() > 200);
   });
 
 });
