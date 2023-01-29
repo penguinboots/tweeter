@@ -116,20 +116,15 @@ $(document).ready(() => {
     $(".new-tweet").find("textarea").focus();
   });
 
+  // click handler for to-top button
   $("#to-top").click(function(event) {
     event.preventDefault();
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   });
 
+  // activate #to-top button if scrolled past 200 units
   $(window).scroll(() => {
-    console.log($(window).scrollTop());
-    // if ($(window).scrollTop() > 100) {
-    //   $("#to-top").slideToggle("slow");
-    // } else {
-    //   $("#to-top").slideToggle("slow");
-    // }
-
     $('#to-top').toggleClass("active", $(window).scrollTop() > 200);
   });
 
