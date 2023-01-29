@@ -126,6 +126,7 @@ $(document).ready(() => {
   // activate #to-top button if scrolled past 200 units
   $(window).scroll(() => {
     $('#to-top').toggleClass("active", $(window).scrollTop() > 200);
+    $('.nav-bar').toggleClass('hide', $(window).scrollTop() > 200);
   });
 
 });

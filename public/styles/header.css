@@ -11,6 +11,10 @@ body>header {
   align-items: center;
 }
 
+.nav-bar.hide {
+  display: none;
+}
+
 #form-toggle {
   background-color: #4055a1;
   border: none;
