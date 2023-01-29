@@ -42,15 +42,22 @@ main {
 
 #to-top {
   position: fixed;
+  width: 80px;
+  height: 80px;
   bottom: 20px;
   right: 30px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
   display: none;
+  border-radius: 50%;
+
+  font-size: 16px;
+  background-color: #4055a1;
+  color: white;
 }
 
 #to-top.active {
   display: block;
+}
+
+#to-top:hover {
+  background-color: #ff8011;
 }
