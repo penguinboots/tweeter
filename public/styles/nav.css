@@ -37,6 +37,7 @@
   color: #d9c89b;
 }
 
+/* --DESKTOP-- */
 @media only screen and (min-width: 1024px) {
   .nav-bar {
     background: #4055a1;
