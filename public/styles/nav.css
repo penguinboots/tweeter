@@ -1,6 +1,5 @@
 .nav-bar {
   color: #ffffff;
-  background: #4055a1;
   height: 120px;
   width: 100%;
   padding-left: 1.5em;
@@ -8,7 +7,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  
 
   display: flex;
   justify-content: space-between;
@@ -30,11 +28,17 @@
 }
 
 #form-toggle {
-  background-color: #4055a1;
   border: none;
-  color:#ff8011;
+  color: #ff8011;
+  background: rgba(0, 0, 0, 0);
 }
 
 #form-toggle:hover {
   color: #d9c89b;
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav-bar {
+    background: #4055a1;
+  }
 }
