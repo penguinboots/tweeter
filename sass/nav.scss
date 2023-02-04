@@ -14,30 +14,30 @@ $title-text-col: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .nav-logo {
+    font-family: Bungee, sans-serif;
+  }
+
+  .nav-write {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #form-toggle {
+    border: none;
+    color: #ff8011;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  #form-toggle:hover {
+    color: #d9c89b;
+  }
 }
 
 .nav-bar.hide {
   display: none;
-}
-
-.nav-logo {
-  font-family: Bungee, sans-serif;
-}
-
-.nav-write {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#form-toggle {
-  border: none;
-  color: #ff8011;
-  background: rgba(0, 0, 0, 0);
-}
-
-#form-toggle:hover {
-  color: #d9c89b;
 }
 
 /* --DESKTOP-- */

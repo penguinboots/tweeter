@@ -11,29 +11,25 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.nav-bar.hide {
-  display: none;
-}
-
-.nav-logo {
+.nav-bar .nav-logo {
   font-family: Bungee, sans-serif;
 }
-
-.nav-write {
+.nav-bar .nav-write {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-#form-toggle {
+.nav-bar #form-toggle {
   border: none;
   color: #ff8011;
   background: rgba(0, 0, 0, 0);
 }
-
-#form-toggle:hover {
+.nav-bar #form-toggle:hover {
   color: #d9c89b;
+}
+
+.nav-bar.hide {
+  display: none;
 }
 
 /* --DESKTOP-- */
