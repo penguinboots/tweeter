@@ -4,12 +4,10 @@
   margin-top: 24px;
   margin-bottom: 24px;
 }
-
 .new-tweet .form .submit-counter {
   display: flex;
   justify-content: space-between;
 }
-
 .new-tweet .form textarea {
   border: none;
   border-bottom: 4px solid grey;
@@ -19,11 +17,9 @@
   height: 48px;
   margin-top: 24px;
 }
-
 .new-tweet .form textarea::placeholder {
   font-weight: bold;
 }
-
 .new-tweet button {
   background-color: #4055a1;
   color: #ffffff;
@@ -32,11 +28,9 @@
   padding-left: 8px;
   padding-right: 8px;
 }
-
 .new-tweet .counter {
   font-family: Bungee, sans-serif;
 }
-
 .new-tweet .error-message {
   color: #af0a0a;
   margin: auto;

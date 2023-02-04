@@ -7,47 +7,47 @@ $background-col: #f4f1ec;
   align-self: center;
   margin-top: 24px;
   margin-bottom: 24px;
-}
 
-.new-tweet .form .submit-counter {
-  display: flex;
-  justify-content: space-between;
-}
+  .form .submit-counter {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.new-tweet .form textarea {
-  border: none;
-  border-bottom: 4px solid grey;
-  background-color: $background-col;
-  outline: none;
-  width: 100%;
-  height: 48px;
-  margin-top: 24px;
-}
+  .form textarea {
+    border: none;
+    border-bottom: 4px solid grey;
+    background-color: $background-col;
+    outline: none;
+    width: 100%;
+    height: 48px;
+    margin-top: 24px;
+  }
 
-.new-tweet .form textarea::placeholder {
-  font-weight: bold;
-}
+  .form textarea::placeholder {
+    font-weight: bold;
+  }
 
-.new-tweet button {
-  background-color: $base-col;
-  color: $title-text-col;
-  font-family: Bungee, sans-serif;
-  font-size: 16px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
+  button {
+    background-color: $base-col;
+    color: $title-text-col;
+    font-family: Bungee, sans-serif;
+    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 
-.new-tweet .counter {
-  font-family: Bungee, sans-serif;
-}
+  .counter {
+    font-family: Bungee, sans-serif;
+  }
 
-.new-tweet .error-message {
-  color: #af0a0a;
-  margin: auto;
-  width: fit-content;
-  margin-top: 24px;
-  text-align: center;
-  border: solid 2px darkred;
-  font-size: 16px;
-  padding: 8px;
+  .error-message {
+    color: #af0a0a;
+    margin: auto;
+    width: fit-content;
+    margin-top: 24px;
+    text-align: center;
+    border: solid 2px darkred;
+    font-size: 16px;
+    padding: 8px;
+  }
 }
