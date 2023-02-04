@@ -11,16 +11,3 @@ body>header {
   align-items: center;
 }
 
-.nav-bar.hide {
-  display: none;
-}
-
-#form-toggle {
-  background-color: #4055a1;
-  border: none;
-  color:#ff8011;
-}
-
-#form-toggle:hover {
-  color: #d9c89b;
-}
