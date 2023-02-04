@@ -1,9 +1,12 @@
+$base-col: #4055a1;
+$title-text-col: #ffffff;
+
 body > header {
   height: 400px;
   width: 100%;
   background-image: url(../images/header-background.png);
-  background-color: #4055a1;
-  color: #ffffff;
+  background-color: $base-col;
+  color: $title-text-col;
 
   display: flex;
   flex-direction: column;

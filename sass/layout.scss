@@ -1,3 +1,9 @@
+$base-col: #4055a1;
+$body-text-col: #545149;
+$title-text-col: #ffffff;
+$background-col: #f4f1ec;
+$body-font: "Source Sans Pro", sans-serif;
+
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
@@ -17,9 +23,9 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
-  font-family: "Source Sans Pro", sans-serif;
+  color: $body-text-col;
+  background-color: $background-col;
+  font-family: $body-font;
   font-size: 24px;
 
   display: flex;
@@ -33,7 +39,7 @@ main {
   display: flex;
   flex-direction: column;
   align-self: center;
-  background-color: #f4f1ec;
+  background-color: $background-col;
 }
 
 /*
@@ -49,8 +55,8 @@ main {
   border-radius: 50%;
 
   font-size: 16px;
-  background-color: #4055a1;
-  color: white;
+  background-color: $base-col;
+  color: $title-text-col;
 }
 
 #to-top.active {

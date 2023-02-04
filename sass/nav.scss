@@ -1,5 +1,8 @@
+$base-col: #4055a1;
+$title-text-col: #ffffff;
+
 .nav-bar {
-  color: #ffffff;
+  color: $title-text-col;
   height: 120px;
   width: 100%;
   padding-left: 1.5em;
@@ -40,6 +43,6 @@
 /* --DESKTOP-- */
 @media only screen and (min-width: 1024px) {
   .nav-bar {
-    background: #4055a1;
+    background: $base-col;
   }
 }
